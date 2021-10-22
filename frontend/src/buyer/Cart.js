@@ -24,7 +24,6 @@ const Cart = () => {
 
   var keys = Object.keys(cart);
   var values = Object.values(cart);
-  console.log("dsdhdshuduhudhu", values[0]);
   var totalamt = values.reduce(calculate, 0);
   var totalsaving = values.reduce(totaloffer, 0);
   var navigate = useNavigate();
@@ -35,8 +34,6 @@ const Cart = () => {
 
   const [getQty, setQty] = useState(1);
   var Reduxdispatch = useDispatch();
-
-  console.log("nanaji", getQty);
 
   const handelincrement = async (id) => {
     const details = {
@@ -92,7 +89,6 @@ const Cart = () => {
   });
 
   const handledeletelaptop = (item) => {
-    console.log("fdfd", item);
     Reduxdispatch({ type: "REMOVE_ITEM", payload: item });
     setRefresh(!refresh);
   };

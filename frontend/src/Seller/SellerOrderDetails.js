@@ -30,8 +30,6 @@ const SellerOrderDetails = () => {
   const [getQty, setQty] = useState(1);
   var Reduxdispatch = useDispatch();
 
-  console.log("nanaji", getQty);
-
   const handelincrement = () => {
     var c = getQty + 1;
     setQty(c);
@@ -44,7 +42,6 @@ const SellerOrderDetails = () => {
   };
 
   const handleAddToCart = (item) => {
-    console.log("lila", product);
 
     // setQty(getQty);
     product.qtydemand = getQty;

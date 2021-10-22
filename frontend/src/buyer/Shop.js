@@ -9,8 +9,6 @@ import { useLocation } from "react-router-dom";
 const Shop = () => {
   const [shopProducts, setShopProducts] = useState([]);
   const { id } = useParams();
-
-  //  console.log("kaka",Navigation)
   console.log("ddddd", id);
   let location = useLocation();
   // alert(location.state) ;
@@ -39,19 +37,13 @@ const Shop = () => {
           `http://localhost:5000/buyer/seller/products/${id}`,
           { headers: { "x-access-token": token } }
         );
-
-        console.log("hi", response);
         if (response.status === 200) setShopProducts(response.data);
         setTempList(response.data);
-
-        console.log("hi", response);
       } catch (error) {
         console.log(error.response.data.message);
       }
     })();
   }, [id, token]);
-
-  console.log("hiproduct", shopProducts);
   return (
     <>
       <Navigation />

@@ -16,7 +16,7 @@ export default function RootReducer(state=initialState,action){
 
    case "ADD_ITEM":
        state.cart[action.payload[0]]=action.payload[1]
-       console.log("popatlal",state.cart)
+       console.log("cart working",state.cart)
        return {cart:state.cart,client:state.client}
    case "REMOVE_ITEM":
         delete state.cart[action.payload]

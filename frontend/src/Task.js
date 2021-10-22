@@ -256,7 +256,7 @@ var cart = useSelector((state) => state.cart);
 var keys = Object.keys(cart);
 var values = Object.values(cart);
 
-console.log("ksss",cart)
+console.log("cart with keys",cart)
 
 
 

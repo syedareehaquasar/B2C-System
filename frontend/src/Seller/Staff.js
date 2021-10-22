@@ -20,8 +20,6 @@ const Product = () => {
 
   const [getQty, setQty] = useState(1);
   var Reduxdispatch = useDispatch();
-
-  //   console.log("nanaji", getQty);
   var navigate = useNavigate();
 
   const handelincrement = () => {
@@ -44,7 +42,6 @@ const Product = () => {
   };
 
   const handleAddToCart = (item) => {
-    console.log("lila", product);
 
     // setQty(getQty);
     product.qtydemand = getQty;

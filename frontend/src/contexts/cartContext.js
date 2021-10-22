@@ -7,7 +7,6 @@ import axios from "axios"
 const CartProvider=({children})=>
 {
     const {user,token} = useAuth();
-    console.log(user,"ab hum yha")
    
     useEffect(()=>
     {
@@ -37,7 +36,6 @@ function reducer(state,action)
             
             ((async()=>
             {
-                console.log(token,"yha tih h na")
                 try
                 {
                    const response =  await axios.post("https://tranquil-escarpment-64779.herokuapp.com/product/"+id,{Credentials:"include"},{headers:{"x-access-token":token}})

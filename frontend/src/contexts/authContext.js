@@ -18,7 +18,6 @@ const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     (async () => {
-      console.log(token, role, "kya haal");
       if (token && role === "buyer") {
         try {
           const buyerResp = await axios.get(
@@ -41,7 +40,6 @@ const AuthProvider = ({ children }) => {
       }
     })();
   }, [token, role]);
-  console.log(user, "thik h ji");
 
   const SellersignUp = async (
     fullname,
@@ -204,7 +202,7 @@ const AuthProvider = ({ children }) => {
         setRole(response.data.result.role);
       }
     } catch (error) {
-      console.log(error.response.data.message, "alo");
+      console.log(error.response.data.message);
       alert(error.response.data.message);
     }
   };
