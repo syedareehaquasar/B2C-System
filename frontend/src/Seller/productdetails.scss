@@ -1,0 +1,14 @@
+.title {
+  margin: auto;
+  @media screen and (max-width: 880px) {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+.info {
+  width: 900px;
+  @media screen and (max-width: 880px) {
+    width: 350px;
+  }
+}

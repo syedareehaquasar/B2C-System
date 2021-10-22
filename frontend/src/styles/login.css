@@ -1,0 +1,50 @@
+.flex-column
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+}
+
+.login-middle
+{
+    height:55vh;
+    padding:2rem 0;
+    border-bottom:1px solid black
+}
+.container {
+    display: flex;
+     flex-direction: row;
+     /* align-items: center;
+     justify-content: center; */
+  }
+  .buttonTrue {
+    display: inline-block;
+    /* padding: 15px 25px;
+    font-size: 24px; */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    background-color:#54a0ff;
+    border: none;
+    border-radius: 15px;
+    /* box-shadow: 0 9px #999; */
+  }
+  
+  .buttonFalse {
+    /* display: inline-block; */
+    /* padding: 15px 25px;
+    font-size: 24px; */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    /* color: #fff;
+    background-color: white; */
+    border: none;
+    border-radius: 15px;
+    /* box-shadow: 0 9px #999; */
+  }
+  

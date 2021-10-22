@@ -1,0 +1,83 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 1rem 0;
+}
+
+.greeting {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.interacting {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.3rem 0;
+}
+
+.searchBar {
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 7px;
+  padding: 0.4rem;
+  border: 3px solid var(--tertiary-color);
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons button {
+  flex: 1;
+  border: none;
+  padding: 0.7rem 0.5rem;
+  font-weight: 500;
+}
+.buttons button:nth-child(1) {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.home-bottom {
+  margin-top: 1rem;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+  background-color: #f6f6f6;
+}
+
+.home-cards {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-card {
+  display: flex;
+  background-color: white;
+  padding: 0.6rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.home-card--content {
+  padding-left: 1.2rem;
+  width: 100%;
+}
+.home-card--content h2 {
+  font-size: 1rem;
+  color: gray;
+  font-weight: 500;
+}
+
+.home-card--content h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.2rem 0;
+}
+.home-card--content .buttons button {
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+}
+.home-card--content .buttons button:nth-child(1) {
+  margin-right: 4px;
+}

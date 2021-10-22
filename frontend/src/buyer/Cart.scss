@@ -1,0 +1,19 @@
+.checkout {
+  font-size: 43px;
+  @media screen and (max-width: 880px) {
+    font-size: 20px;
+    width: 70%;
+  }
+}
+
+.deleteDiv {
+  display: flex;
+  align-content: flex-end;
+  align-self: flex-end;
+  margin-left: 1000%;
+
+  @media screen and (max-width: 650px) {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}

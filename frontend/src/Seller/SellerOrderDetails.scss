@@ -1,0 +1,47 @@
+.main-div {
+  overflow: hidden;
+}
+
+.assign {
+  display: block;
+  width: 900px;
+  padding: 30px;
+  @media screen and (max-width: 880px) {
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+
+.detailsOverride {
+  background: #9aecdb;
+  margin-top: 30px;
+  width: 900px;
+  @media screen and (max-width: 880px) {
+    width: 350px;
+    padding: 10px;
+  }
+  .bill {
+    margin-left: 20px;
+  }
+}
+
+.date {
+  margin-left: 800px;
+  @media screen and (max-width: 880px) {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+.img-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  @media screen and (max-width: 880px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

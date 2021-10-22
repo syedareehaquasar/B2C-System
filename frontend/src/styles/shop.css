@@ -1,0 +1,28 @@
+.shopName
+{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 0;
+}
+
+.shopName h2
+{
+    font-size:1rem;
+}
+
+.whatsapp
+{
+    display:flex; 
+ align-items:center; 
+
+    background-color:#09B271;
+    padding:.5rem .5rem;
+     border-radius:5px; 
+
+}
+.whatsapp span
+{  
+    color:white;
+    padding-left:.2rem;
+}

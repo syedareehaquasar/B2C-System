@@ -1,0 +1,48 @@
+$desktop: 1200px;
+$laptop: 992px;
+$tablet: 768px;
+$phone: 480px;
+
+.main {
+  overflow: hidden;
+  .onbording1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      background-color: black;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+    }
+
+    .svg-logo {
+      width: 40%;
+      height: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .banner-image {
+        width: 65%;
+        // max-width: 500px;
+        height: 15rem;
+      }
+      @media screen and (max-width: $laptop) {
+        .svg-logo {
+          width: 500px;
+          height: 500px;
+        }
+        .banner-image {
+          width: 500px;
+        }
+      }
+    }
+  }
+}

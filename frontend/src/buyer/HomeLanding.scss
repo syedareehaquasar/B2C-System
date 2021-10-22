@@ -1,0 +1,46 @@
+$desktop: 1200px;
+$laptop: 992px;
+$tablet: 768px;
+$phone: 480px;
+
+.search {
+  input {
+    width: 90%;
+  }
+  button {
+    margin-left: 1rem;
+    background: #40bfff;
+    border: none;
+    border-radius: 7px;
+    padding: 0.4rem;
+    width: 7%;
+    color: white;
+  }
+
+  @media screen and (max-width: $laptop) {
+    input {
+      width: 75%;
+    }
+    button {
+      width: 20%;
+    }
+  }
+}
+
+.call {
+  background: #ced4da;
+  display: block;
+  text-decoration: none;
+  width: 50%;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 0.5rem;
+  color: #343a40;
+  font-weight: 500;
+  .span {
+    font-weight: 500;
+  }
+  @media screen and (max-width: 380px) {
+    padding-top: 20px;
+  }
+}

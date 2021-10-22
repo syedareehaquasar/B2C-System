@@ -1,0 +1,19 @@
+.details {
+  margin-left: 660px;
+  margin-top: 0;
+  span {
+    color: white;
+    background-color: #09b271;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-left: 0.2rem;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 880px) {
+    margin-left: 10rem;
+  }
+}
+
+.para {
+  display: inline-block;
+}
